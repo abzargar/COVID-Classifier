@@ -58,7 +58,7 @@ plt.xlabel('Epochs')
 plt.ylabel('Loss Score')
 plt.legend(['Validation Loss','Training Loss'])
 plt.grid(1)
-plt.savefig('training_loss',dpi=300,format='eps')
+plt.savefig('training_loss.jpg',dpi=300)
 # =============================================================================
 # evaluate model
 # =============================================================================
@@ -69,7 +69,7 @@ print(cm)
 
 fig = plt.figure()
 plot_confusion_matrix(cm,classes=['COVID-19','Normal','Pneumonia'])
-plt.savefig('conf_matrix',dpi=300,format='eps')
+plt.savefig('conf_matrix.jpg',dpi=300)
 
 test_loss=model.evaluate(X_test,y_test,verbose=1)#evaluate model
 print(test_loss)#print test loss and metrics information
@@ -90,7 +90,7 @@ plt.ylabel('True Positive Rate')
 plt.title('Receiver operating characteristic')
 plt.grid(1)
 plt.legend(loc="lower right")
-plt.savefig('roc_covid',dpi=300,format='eps')
+plt.savefig('roc_covid.jpg',dpi=300)
 
 # =============================================================================
 # ROC curve where positive label is normal
@@ -108,7 +108,7 @@ plt.ylabel('True Positive Rate')
 plt.title('Receiver operating characteristic')
 plt.grid(1)
 plt.legend(loc="lower right")
-plt.savefig('roc_normal',dpi=300,format='eps')
+plt.savefig('roc_normal.jpg',dpi=300)
 
 # =============================================================================
 # ROC curve where positive label is COVID-19
@@ -126,7 +126,7 @@ plt.ylabel('True Positive Rate')
 plt.title('Receiver operating characteristic')
 plt.grid(1)
 plt.legend(loc="lower right")
-plt.savefig('roc_pneumonia',dpi=300,format='eps')
+plt.savefig('roc_pneumonia.jpg',dpi=300)
 
 
 
