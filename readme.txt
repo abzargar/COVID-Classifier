@@ -1,3 +1,4 @@
+
 Abstract:
 
 Chest-X ray (CXR) radiography can be used as a first-line triage process 
