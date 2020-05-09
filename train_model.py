@@ -56,7 +56,6 @@ fig = plt.figure()
 plt.plot(model.history.history['val_loss'], 'r', model.history.history['loss'], 'b')
 plt.xlabel('Epochs')
 plt.ylabel('Loss Score')
-plt.legend(['Validation Loss','Training Loss'])
 plt.grid(1)
 plt.savefig('training_loss.jpg',dpi=300)
 # =============================================================================
