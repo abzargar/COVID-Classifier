@@ -11,8 +11,8 @@ of hospital resources by rapid triage of non-COVID-19 cases.
 
 dataset:
 COVID-> 140 X-ray images
-COVID-> 140 X-ray images
-COVID-> 140 X-ray images
+normal-> 140 X-ray images
+pneumonia-> 140 X-ray images
 
 How to use:
 1-Run "preprocess_images.py" to preprocess images by resizing, normalization, adaptive histogram equalization
