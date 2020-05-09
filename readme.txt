@@ -20,7 +20,7 @@ Test results:
 
 	        Precision	 Sensitivity	 F-score	 Support
 COVOD-19	   96%	    100%	        0.98	     25
-Normal	     88%	    100%	        0.94	     31
-Pneumonia	   100%	    82%	          0.91	     28
+Normal	           88%	    100%	        0.94	     31
+Pneumonia	   100%	    82%	                0.91	     28
 
 
