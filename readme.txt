@@ -1,11 +1,9 @@
 
 Abstract:
 
-Chest-X ray (CXR) radiography can be used as a first-line triage process 
-for non-COVID-19 patients who have similar symptoms. However, the similarity 
-between features of CXR images of COVID-19 and pneumonia caused by other infections 
-make the differential diagnosis by radiologists challenging. We hypothesized that 
-machine learning-based classifiers can reliably distinguish the CXR images of 
+Chest-X ray (CXR) radiography can be used as a first-line triage process for non-COVID-19 patients who have similar symptoms. However,  
+the similarity between features of CXR images of COVID-19 and pneumonia caused by other infections make the differential diagnosis by 
+radiologists challenging. We hypothesized that machine learning-based classifiers can reliably distinguish the CXR images of
 COVID-19 patients from other forms of pneumonia. We used feature extraction 
 and dimensionality reduction methods to generate an efficient machine learning 
 classifier that can distinguish COVID-19 cases from non-COVID-19 cases with 
