@@ -47,7 +47,7 @@ plt.bar(x[1:],h/(252*252),width=0.1)
 plt.grid(linewidth=.3)  
 plt.xlabel('Correlation coefficient value')
 plt.ylabel('Frequency percentage (%)')
-plt.savefig('corr_hist',dpi=300,format='eps')
+plt.savefig('corr_hist.jpg',dpi=300)
 # =============================================================================
 # auc value graphs where positive label is COVID-19             
 # =============================================================================
@@ -73,7 +73,7 @@ plt.ylim([0, 1])
 plt.title('pos_label=COVID-19')
 plt.legend(loc="upper right")
 plt.ylabel('Average AUC value')
-plt.savefig('avg_bar_pos_COVID',dpi=300,format='eps')
+plt.savefig('avg_bar_pos_COVID.jpg',dpi=300)
 
 fig = plt.figure()
 plt.plot([i for i in range(1,scores.shape[1]+1)],np.sort(roc_list)[::-1],'x')
@@ -84,7 +84,7 @@ plt.xlabel('Features')
 plt.ylabel('Sorted AUC values')
 plt.title('pos_label=COVID-19')
 plt.legend(loc="upper right")
-plt.savefig('auc_pos_COVID',dpi=300,format='eps')
+plt.savefig('auc_pos_COVID.jpg',dpi=300)
 
 # =============================================================================
 # auc value graphs where positive label is normal
@@ -109,7 +109,7 @@ plt.ylim([0, 1])
 plt.title('pos_label=Normal')
 plt.legend(loc="upper right")
 plt.ylabel('Average AUC value')
-plt.savefig('avg_bar_pos_Normal',dpi=300,format='eps')
+plt.savefig('avg_bar_pos_Normal.jpg',dpi=300)
 
 print(np.argmax(roc_list))
 print(np.max(roc_list))
@@ -122,7 +122,7 @@ plt.xlabel('Features')
 plt.ylabel('Sorted AUC values')
 plt.title('pos_label=Normal')
 plt.legend(loc="upper right")
-plt.savefig('auc_pos_Normal',dpi=300,format='eps')
+plt.savefig('auc_pos_Normal.jpg',dpi=300)
 
 # =============================================================================
 # auc value graphs where positive label is pneumonia
@@ -150,7 +150,7 @@ plt.ylim([0, 1])
 plt.title('pos_label=Pneumonia')
 plt.legend(loc="upper right")
 plt.ylabel('Average AUC value')
-plt.savefig('avg_bar_pos_Pneumonia',dpi=300,format='eps')
+plt.savefig('avg_bar_pos_Pneumonia.jpg',dpi=300)
 
 fig = plt.figure()
 plt.plot([i for i in range(1,scores.shape[1]+1)],np.sort(roc_list)[::-1],'x')
@@ -161,4 +161,4 @@ plt.xlabel('Features')
 plt.ylabel('Sorted AUC values')
 plt.title('pos_label=Pneumonia')
 plt.legend(loc="upper right")
-plt.savefig('auc_pos_Pneumonia',dpi=300,format='eps')
+plt.savefig('auc_pos_Pneumonia.jpg',dpi=300)
