@@ -30,4 +30,7 @@ COVOD-19	   96%	           100%	           0.98	           25
 Normal	           88%	           100%	           0.94	           31
 Pneumonia	   100%	           82%	           0.91	           28
 
+Please cite the follwoing paper if you use our paper codes:
+
+Abolfazl Zargari Khuzani, Morteza Heidari, Ali Shariati, "COVID-Classifier: An automated machine learning model to assist in the diagnosis of COVID-19 infection in chest x-ray images," medRxiv, doi: https://doi.org/10.1101/2020.05.09.20096560, 2020.
 
