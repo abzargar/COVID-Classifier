@@ -61,8 +61,8 @@ for idx,img_name in enumerate(image_list):
     glcms =greycomatrix(img, [1], [0, np.pi/4, np.pi/2, 3*np.pi/4])#GLCM in four directions
     glcm_features=np.concatenate((compute_14_features(im2double(glcms[:, :, 0, 0])), 
                                   compute_14_features(im2double(glcms[:, :, 0, 1])),
-                                  compute_14_features(im2double(im2double(glcms[:, :, 0, 2]))),
-                                  compute_14_features(glcms[:, :, 0, 3])), axis=0)
+                                  compute_14_features(im2double(glcms[:, :, 0, 2])),
+                                  compute_14_features(im2double(glcms[:, :, 0, 3]))), axis=0)
     
     feature_vector=np.concatenate((texture_features,fft_features,wavelet_features,gldm_features,glcm_features), axis=0).reshape(1,252)#merge to create a feature vector of 252
     feature_pool=np.concatenate((feature_pool,feature_vector), axis=0)
